@@ -11,7 +11,7 @@
      - set the `network_name` variable declaration to `null` or remove it
      - optionally specify fixed MAC addresses by adding `mac = "CA:FE:BA:BE:00:01"` lines to VM modules
    - if other sumaform users deploy to the same host, or different bridged hosts in the same network, uncomment the `name_prefix` variable declaration in the `base` module to specify a unique prefix for your VMs
- - complete the `cc_password` variable in the `base` module
+ - if you have a [SUSE Customer Center (SCC) account](https://scc.suse.com/), fill the in the credentials in the `cc_username` and `cc_password` variables in the `base` module
  - make sure that:
    - either your target libvirt host has a storage pool named `default`
    - or you [create one](https://documentation.suse.com/sles/12-SP4/html/SLES-all/cha-libvirt-storage.html#sec-libvirt-storage-vmm-addpool)
